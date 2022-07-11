@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "4OvKy6RZJicQkBJHrANGgVQ4oPzQJwY5bwBjMpXnu8ufy1fq++Y4A3RP08YWSZqvwwkYUx74dQ3icnzKMtjf+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\source\\repos\\C#taining\\HTMLDay3AssignmentSolution\\HTMLDay3AssignmentProject\\HTMLDay3AssignmentProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\documentformat.openxml\\2.17.1\\documentformat.openxml.2.17.1.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

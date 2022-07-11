@@ -6,23 +6,27 @@ using System.Threading.Tasks;
 
 namespace HTMLDay3AssignmentProject
 {
-    public interface IAdd
+    public interface IFact
     {
-        int Add(int num1, int num2);
+        int Fact(int num1);
     }
     public interface IMultiply
     {
         float Multiply(float num1, float num2);
     }
-    internal class Question8 : IAdd, IMultiply
+    internal class Question8 : IFact, IMultiply
     {
         int result1;
         float result2;
-        public int Add(int a, int b)
+        public int Fact(int a)
         {
-            result1 = a + b;
-            Console.WriteLine("sum of two num " + a +" & "+ b + " = " + result1);
-            return result1;
+            int fact = 1;
+            for(int i = a ; i > 0; i--)
+            {
+                fact = fact * i;
+            }
+            Console.WriteLine("Factorial of num " + a + " = " + fact);
+            return fact;
         }
         public float Multiply(float num1, float num2)
         {

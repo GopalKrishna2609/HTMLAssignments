@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="SampleVideo_360x240_1mb.mp4">
+          <source src="SampleVideo_360x240_1mb.mp4" >
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+      <div>
+        <h1 style="text-align: center;"> Image to use:</h1>
+        <img id="Statue" src="_top-10-tallest-statue-in-the-world_FOR_HTML_PRACTICE.jpg" alt="The Scream" width="200" height="250">
+        <h3>Canvas to fill:</h3> 
+        <canvas id="myCanvas" width="600" height="500" style="border:1px solid #d3d3d3;">
+        </canvas>
+       <!-- <h3><button onclick="myCanvas()">Try it</button></h3> -->
+      </div>
+    <script> 
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+        
+        // function myCanvas() {
+        // var canvas = document.getElementById("myCanvas");
+        // var context = canvas.getContext("2d");
+        // var img = document.getElementById("Statue");
+        // context.onload()
+        // context.drawImage(img,1,1);
+        // }
+        window.onload = function()
+        {
+                setTimeout(function myCanvas() 
+                {
+                    var canvas = document.getElementById("myCanvas");
+                    var context = canvas.getContext("2d");
+                    var img = document.getElementById("Statue");
+                    context.drawImage(img,10,10);
+                 }, 1500);
+        };
+        </script> 
+       
+</body>
+</html>
